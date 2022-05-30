@@ -8,7 +8,7 @@
           <div class="w-full flex items-center justify-between">
           <!-- <p @click="showRate = 1" class="bg-ggreen text-white rounded-full px-1 text-sm">{{ tv.credit[0] }}</p> -->
           <p class="bg-ggreen text-white rounded-full px-1 text-sm">{{ tv.credit[0] }}</p>
-          <div v-if="showLike === 1"><p class="bg-gray-200 text-xs text-black p-1 rounded-lg border" >Добавить в желаемое</p></div>
+          <div v-if="showLike === 1"><p @click="showLike = 0" class="bg-gray-200 text-xs text-black p-1 rounded-lg border" >Добавить в желаемое</p></div>
           <div @click="showLike = 1"><i class="fas fa-heart hover:cursor-pointer"></i></div>
           </div>
           <img class="ml-6" :src="tv.img" alt="">
