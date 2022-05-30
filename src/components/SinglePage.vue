@@ -111,7 +111,8 @@ export default {
   name: "SinglePage",
   data() {
     return {
-      tvs: null
+      tvs: null,
+      showImg: 0
     }
   },
   async mounted() {
